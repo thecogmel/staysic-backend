@@ -3,8 +3,11 @@
   "url": "TYPEORM_URL",
   "synchronize": true,
   "logging": false,
-  "ssl": {
-    "rejectUnauthorized": false
+  "extra": {
+    "ssl": {
+      "require": true,
+      "rejectUnauthorized": false
+    }
   },
   "entities": ["TYPEORM_ENTITIES"],
   "migrations": ["TYPEORM_MIGRATIONS"],
