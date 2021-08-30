@@ -1,11 +1,15 @@
 {
   "type": "postgres",
-  "url": "TYPEORM_URL",
+  "host": "process.env.TYPEORM_HOST",
+  "port": 5432,
+  "username": "process.env.TYPEORM_USERNAME",
+  "password": "process.env.TYPEORM_PASSWORD",
+  "database": "process.env.TYPEORM_DATABASE",
   "synchronize": true,
   "logging": false,
   "ssl": true,
   "extra": { "ssl": { "rejectUnauthorized": false } },
-  "entities": ["TYPEORM_ENTITIES"],
-  "migrations": ["TYPEORM_MIGRATIONS"],
-  "subscribers": ["TYPEORM_SUBSCRIBERS"]
+  "entities": ["process.env.TYPEORM_ENTITIES"],
+  "migrations": ["process.env.TYPEORM_MIGRATIONS"],
+  "subscribers": ["process.env.TYPEORM_SUBSCRIBERS"]
 }
