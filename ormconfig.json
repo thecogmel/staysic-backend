@@ -3,6 +3,9 @@
   "url": "TYPEORM_URL",
   "synchronize": true,
   "logging": false,
+  "ssl": {
+    "rejectUnauthorized": false
+  },
   "entities": ["TYPEORM_ENTITIES"],
   "migrations": ["TYPEORM_MIGRATIONS"],
   "subscribers": ["TYPEORM_SUBSCRIBERS"]
