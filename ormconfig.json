@@ -7,7 +7,9 @@
   "database": "process.env.TYPEORM_DATABASE",
   "synchronize": true,
   "logging": false,
-  "extra": "process.env.TYPEORM_DRIVER_EXTRA",
+  "extra": {
+    "ssl": true
+  },
   "entities": ["process.env.TYPEORM_ENTITIES"],
   "migrations": ["process.env.TYPEORM_MIGRATIONS"],
   "subscribers": ["process.env.TYPEORM_SUBSCRIBERS"]
