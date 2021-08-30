@@ -1,6 +1,6 @@
 {
   "type": "postgres",
-  "url": "TYPEORM_URL",
+  "url": "DATABASE_URL",
   "synchronize": true,
   "logging": false,
   "entities": ["TYPEORM_ENTITIES"],
