@@ -18,6 +18,9 @@ app.use(express.json());
 app.use(routes);
 
 // start express server
-app.listen(process.env.PORT, () =>
-  console.log(`Express server has started on port ${process.env.PORT}.`),
-);
+app.listen(process.env.PORT, () => {
+  console.log(`Express server has started on port ${process.env.PORT}.`);
+  console.log(
+    `${process.env.TYPEORM_HOST} - ${process.env.TYPEORM_DATABASE}-${process.env.TYPEORM_USERNAME}- ${process.env.TYPEORM_PASSWORD}.`,
+  );
+});
